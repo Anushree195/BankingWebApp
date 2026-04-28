@@ -62,7 +62,7 @@ stage('Docker Image Build') {
                         transfers: [
                             sshTransfer(
                                 sourceFiles: '*.yaml',
-                                execCommand: 'kubectl apply -f kubedeploy.yaml',
+                                execCommand: 'kubectl apply -f bankingdeploy.yaml'
                                 execTimeout: 120000
                             )
                         ]
